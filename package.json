@@ -2,6 +2,11 @@
   "name": "eslint-config-devoks",
   "version": "0.7.0",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js",
+    "./typescript": "./typescript.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ridsync/eslint-config-devoks.git"
@@ -21,6 +26,7 @@
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "prettier": "^3.5.3"
@@ -29,9 +35,13 @@
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
     "eslint": "^8.40.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-no-relative-import-paths": "^1.6.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "prettier": "^3.5.3"
   }
 }

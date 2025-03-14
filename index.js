@@ -1,11 +1,35 @@
 module.exports = {
+  // TODO
   env: {
     es2021: true,
     node: true,
     browser: true,
   },
-  plugins: ["prettier"],
-  extends: ["eslint:recommended", "airbnb"],
+  plugins: ["import", "prettier", "no-relative-import-paths"],
+  extends: [
+    "eslint:recommended",
+    "prettier",
+    "plugin:prettier/recommended",
+    "airbnb",
+  ],
+  // TODO
+  settings: {
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+        project: "./tsconfig.json",
+      },
+      node: {
+        paths: ["."],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+        alias: {
+          "@src": "./src",
+          "@compontnts": "./src/components",
+        },
+      },
+    },
+  },
+  // TODO
   parserOptions: {
     ecmaVersion: 12,
     sourceType: "module",
