@@ -10,6 +10,8 @@ use this command:
 yarn add --dev eslint-config-devoks
 ```
 
+If you need to, you can add eslint and eslint plugins at the same time.
+
 eslint base dependecies:
 ```sh
 yarn add --dev eslint@8.54.0 prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-no-relative-import-paths
