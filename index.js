@@ -12,30 +12,34 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
   ],
-  settings: {
-    'import/resolver': {
-      typescript: {
-        alwaysTryTypes: true,
-        project: './tsconfig.json',
-      },
-      node: {
-        paths: ['.'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        alias: {
-          '@src': './src',
-          '@compontnts': './src/components',
-        },
-      },
-    },
-  },
-  ignorePatterns: [
-    'node_modules/*',
-    'dist/*',
-    'public/*',
-    'vite.config.ts',
-    'tailwind.config.ts',
-    'postcss.config.js',
-  ],
+  // TODO
+  // settings: {
+  //   react: {
+  //     version: 'detect',
+  //   },
+  //   'import/resolver': {
+  //     typescript: {
+  //       alwaysTryTypes: true,
+  //       project: './tsconfig.json',
+  //     },
+  //     node: {
+  //       paths: ['.'],
+  //       extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  //       alias: {
+  //         '@src': './src',
+  //         '@compontnts': './src/components',
+  //       },
+  //     },
+  //   },
+  // },
+  // ignorePatterns: [
+  //   'node_modules/*',
+  //   'dist/*',
+  //   'public/*',
+  //   'vite.config.ts',
+  //   'tailwind.config.ts',
+  //   'postcss.config.js',
+  // ],
   rules: {
     /** base **/
     'no-console': 'warn',
