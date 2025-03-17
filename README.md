@@ -1,4 +1,4 @@
-# eslint-config-devoks
+# eslint-config-devoks [![npm version](https://badge.fury.io/js/eslint-config-devoks.svg)](https://badge.fury.io/js/eslint-config-devoks)
 
 DevOks's Base ESlint Shared Configuration for React & Vite Environment.
 
@@ -14,17 +14,22 @@ If you need to, you can add eslint and eslint plugins at the same time.
 
 eslint base dependecies:
 ```sh
-yarn add --dev eslint@8.54.0 prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-no-relative-import-paths
+yarn add --dev eslint@8.54.0 prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-import eslint-plugin-no-relative-import-paths globals
+```
+
+eslint airbnb-base-config dependecies:
+```sh
+yarn add --dev eslint-config-airbnb eslint-config-airbnb-typescript
 ```
 
 eslint typescript plugin dependecies:
 ```sh
-yarn add --dev  @typescript-eslint/parser @typescript-eslint/eslint-plugin
+yarn add --dev typescript typescript-eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-import-resolver-typescript
 ```
 
 eslint react plugin dependecies:
 ```sh
-yarn add --dev eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh 
+yarn add --dev eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh eslint-plugin-jsx-a11y
 ```
 
 
@@ -34,24 +39,24 @@ After installing, update your project's `.eslintrc.cjs` file to extends sets :
 
 ```js
   extends: [
-    'eslint-config-devoks',
-    'eslint-config-devoks/react',
-    'eslint-config-devoks/typescript',
++   'eslint-config-devoks',
++   'eslint-config-devoks/react',
++   'eslint-config-devoks/typescript',
   ],
 ```
 
 update your project's `.eslintrc.cjs` file to parser and parserOptions sets:
 
 ```js
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
-    project: './tsconfig.json',
-  },
++ parser: '@typescript-eslint/parser',
++ parserOptions: {
++   ecmaVersion: 'latest',
++   sourceType: 'module',
++   ecmaFeatures: {
++     jsx: true,
++   },
++   project: './tsconfig.json',
++ },
 ```
 
 ## Example
@@ -103,6 +108,9 @@ module.exports = {
     'tailwind.config.ts',
     'postcss.config.js',
   ],
+  rules: {
++    // update your custom rules
+  },
 };
 ```
 

@@ -1,6 +1,7 @@
 module.exports = {
+  // @typescript-eslint - https://typescript-eslint.io/rules/
   plugins: ['@typescript-eslint'],
-  extends: ['plugin:@typescript-eslint/eslint-recommended'],
+  extends: ['plugin:@typescript-eslint/eslint-recommended', 'airbnb-typescript'],
   rules: {
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',

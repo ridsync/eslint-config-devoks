@@ -1,4 +1,9 @@
 module.exports = {
+  // eslint:recommended - https://eslint.org/docs/latest/rules/ 
+  // import - https://github.com/import-js/eslint-plugin-import
+  // eslint-plugin-prettier - https://github.com/prettier/eslint-plugin-prettier
+  // extends: 'prettier' - https://www.npmjs.com/package/eslint-config-prettier
+  // no-relative-import-paths - https://github.com/MelvinVermeer/eslint-plugin-no-relative-import-paths
   env: {
     es2021: true,
     node: true,
