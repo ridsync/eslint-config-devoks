@@ -3,7 +3,6 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: ['plugin:@typescript-eslint/eslint-recommended', 'airbnb-typescript'],
   rules: {
-    '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/naming-convention': [
       'warn',

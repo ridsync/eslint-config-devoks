@@ -27,14 +27,6 @@ module.exports = {
   //       alwaysTryTypes: true,
   //       project: './tsconfig.json',
   //     },
-  //     node: {
-  //       paths: ['.'],
-  //       extensions: ['.js', '.jsx', '.ts', '.tsx'],
-  //       alias: {
-  //         '@src': './src',
-  //         '@compontnts': './src/components',
-  //       },
-  //     },
   //   },
   // },
   // ignorePatterns: [

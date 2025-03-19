@@ -24,5 +24,24 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // React Hooks 사용에 관련된 규칙 적용
     'react-hooks/exhaustive-deps': 'error', // React Hooks의 useEffect 함수에서 의존성 배열을 검사
     'react-refresh/only-export-components': 'off', // React Fast Refresh 규칙 플러그인
+    "react/sort-comp": [
+    "warn",
+    {
+      "order": [
+        "static-variables",
+        "static-methods",
+        "instance-variables",
+        "instance-methods",
+        "lifecycle",
+        "/^handle.+$/",
+        "/^on.+$/",
+        "everything-else",
+        "rendering"
+      ],
+      "groups": {
+        "rendering": ["/^render.+$/", "render"]
+      }
+    }
+  ],
   },
 };
