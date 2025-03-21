@@ -19,7 +19,7 @@ yarn add --dev eslint@8.54.0 prettier eslint-config-prettier eslint-plugin-prett
 
 eslint airbnb-base-config dependecies:
 ```sh
-yarn add --dev eslint-config-airbnb eslint-config-airbnb-typescript
+yarn add --dev eslint-config-airbnb
 ```
 
 eslint typescript plugin dependecies:

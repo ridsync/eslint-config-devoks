@@ -1,7 +1,7 @@
 module.exports = {
   // @typescript-eslint - https://typescript-eslint.io/rules/
   plugins: ['@typescript-eslint'],
-  extends: ['plugin:@typescript-eslint/eslint-recommended', 'airbnb-typescript'],
+  extends: ['plugin:@typescript-eslint/eslint-recommended'],
   rules: {
     '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/naming-convention': [
