@@ -17,41 +17,11 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
   ],
-  // TODO
-  // settings: {
-  //   react: {
-  //     version: 'detect',
-  //   },
-  //   'import/resolver': {
-  //     typescript: {
-  //       alwaysTryTypes: true,
-  //       project: './tsconfig.json',
-  //     },
-  //   },
-  // },
-  // ignorePatterns: [
-  //   'node_modules/*',
-  //   'dist/*',
-  //   'public/*',
-  //   'vite.config.ts',
-  //   'tailwind.config.ts',
-  //   'postcss.config.js',
-  // ],
   rules: {
     /** base **/
     'no-console': 'warn',
     // import에 확장자 사용여부 설정
     'import/extensions': 'error',
-    // 'import/extensions': [
-    //   'error',
-    //   'ignorePackages',
-    //   {
-    //     js: 'never',
-    //     jsx: 'never',
-    //     ts: 'never',
-    //     tsx: 'never',
-    //   },
-    // ],
     // 같은 폴더인 경우를 제외하고 import 경로는 항상 절대 경로를 사용 <- 'autofix 문제 해결필요'
     'no-relative-import-paths/no-relative-import-paths': [
       'warn',

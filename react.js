@@ -4,7 +4,7 @@ module.exports = {
   // react-refresh - 
   // airbnb - https://www.npmjs.com/package/eslint-config-airbnb
   plugins: ['react', 'react-hooks', 'react-refresh'],
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: ['plugin:react/recommended'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
